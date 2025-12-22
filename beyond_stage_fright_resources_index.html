@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Beyond Stage Fright — Resources</title>
+  <meta name="description" content="Resources for jazz educators and students addressing music performance anxiety (MPA), including downloads, books, organizations, and selected research." />
+  <style>
+    :root{
+      --bg: #0b0c10;
+      --panel: #111319;
+      --text: #e9edf3;
+      --muted: #b6c0cf;
+      --link: #8ab4ff;
+      --border: #2a2f3a;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 14px;
+      --max: 980px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f6f7fb;
+        --panel:#ffffff;
+        --text:#0c1222;
+        --muted:#55627a;
+        --link:#1f5bd8;
+        --border:#e3e7ef;
+        --shadow: 0 10px 30px rgba(12,18,34,.08);
+      }
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: var(--sans);
+      background: radial-gradient(1200px 700px at 20% 0%, rgba(138,180,255,.14), transparent 60%),
+                  radial-gradient(900px 600px at 90% 10%, rgba(152,255,204,.12), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a{ color: var(--link); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{ max-width: var(--max); margin: 0 auto; padding: 28px 18px 60px; }
+
+    header{
+      background: color-mix(in oklab, var(--panel) 94%, transparent);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: calc(var(--radius) + 6px);
+      padding: 22px 22px 18px;
+      backdrop-filter: blur(8px);
+    }
+
+    .kicker{
+      color: var(--muted);
+      font-size: 13px;
+      margin:0 0 6px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    h1{
+      margin: 0 0 8px;
+      font-size: clamp(26px, 3.6vw, 38px);
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+    }
+
+    .presenters{
+      margin: 0 0 10px;
+      color: var(--text);
+      font-weight: 650;
+    }
+
+    .desc{ margin: 0 0 16px; color: var(--muted); max-width: 72ch; }
+
+    nav{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    .pill{
+      display:inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: color-mix(in oklab, var(--panel) 92%, transparent);
+      color: var(--text);
+      font-size: 14px;
+      white-space: nowrap;
+      font-weight: 650;
+    }
+
+    section{
+      background: color-mix(in oklab, var(--panel) 94%, transparent);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px 18px 10px;
+      margin-top: 16px;
+    }
+
+    .section-head{
+      display:flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 0 0 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-head h2{
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-head .meta{
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .sub{ color: var(--muted); margin: 10px 0 12px; }
+
+    .downloads{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin: 12px 0 6px;
+    }
+
+    @media (min-width: 720px){
+      .downloads{ grid-template-columns: 1fr 1fr; }
+    }
+
+    .dl-item{
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      background: color-mix(in oklab, var(--panel) 92%, transparent);
+    }
+
+    .dl-caption{
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .btn{
+      display:inline-flex;
+      gap: 10px;
+      align-items: center;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: color-mix(in oklab, var(--panel) 92%, transparent);
+      box-shadow: 0 6px 18px rgba(0,0,0,.12);
+      font-weight: 700;
+      text-decoration:none;
+    }
+    .btn:focus{ outline: 2px solid color-mix(in oklab, var(--link) 70%, white 30%); outline-offset: 2px; }
+
+    .btn small{ font-weight: 600; color: var(--muted); }
+
+    details{
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+
+    summary{
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
+      font-weight: 800;
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    summary::before{
+      content: "▸";
+      font-size: 14px;
+      color: var(--muted);
+      transition: transform .2s ease;
+    }
+
+    details[open] > summary::before{
+      transform: rotate(90deg);
+    }
+
+    summary::-webkit-details-marker{ display:none; }
+
+    ul{ margin: 6px 0 12px 20px; }
+    li{ margin: 8px 0; }
+
+    /* APA-style reference lists (hanging indent) */
+    .apa{ list-style: none; padding: 0; margin: 8px 0 14px; }
+    .apa li{ margin: 12px 0; padding-left: 1.6em; text-indent: -1.6em; }
+    .apa em{ font-style: italic; }
+    .doi{ display: inline-block; margin-top: 4px; font-family: var(--mono); font-size: 12.5px; }
+
+    .why{ color: var(--muted); font-size: 14px; margin: 3px 0 0; }
+
+    footer{
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 10px 2px;
+    }
+
+    .fineprint{ max-width: 92ch; }
+
+    /* Print-friendly */
+    @media print{
+      body{ background: #fff; color: #000; }
+      header, section{ box-shadow:none; }
+      a{ color:#000; text-decoration: underline; }
+      .pill, .btn{ border: 1px solid #bbb; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="kicker">Resources</p>
+      <h1>Beyond Stage Fright – Addressing Music Performance Anxiety in Jazz Students</h1>
+      <p class="presenters">Thomas J. Johnson &nbsp;·&nbsp; John Britton</p>
+      <p class="desc">
+        Evidence-based tools and references for jazz educators and students: inclusive practices, warning signs, graded improvisational exposure,
+        and peer support strategies to build confidence and expression.
+      </p>
+
+      <nav aria-label="Page sections">
+        <a class="pill" href="#downloads">Downloads</a>
+        <a class="pill" href="#resources">Resource list</a>
+        <a class="pill" href="#research">Selected research</a>
+      </nav>
+    </header>
+
+    <section id="downloads">
+      <div class="section-head">
+        <h2>Downloads</h2>
+        <p class="meta">Hosted with this page</p>
+      </div>
+
+      <div class="downloads">
+        <div class="dl-item">
+          <a class="btn" href="./Beyond%20Stage%20Fright%20MPA%20Slides.pdf" download>
+            Slides (PDF)
+            <small>coming soon</small>
+          </a>
+          <p class="dl-caption">Clinic presentation slides.</p>
+        </div>
+
+        <div class="dl-item">
+          <a class="btn" href="./mpa-handout.pdf" download>
+            MPA Handout (PDF)
+          </a>
+          <p class="dl-caption">Quick reference: signs, triggers, coping tools, and help-seeking resources.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <div class="section-head">
+        <h2>Resource list</h2>
+        <p class="meta">Books, organizations, and educator-friendly sites</p>
+      </div>
+      <details open>
+        <summary>Presenter links</summary>
+        <ul>
+          <li>
+            <a href="https://www.tomtunesmusic.com/" target="_blank" rel="noopener noreferrer">TomTunesMusic.com</a>
+            <div class="why">Thomas J. Johnson’s music (compositions, arrangements, performances) and updates.</div>
+          </li>
+          <li>
+            <a href="https://www.tomtunesmusic.com/isu-psychomusicology-lab" target="_blank" rel="noopener noreferrer">ISU Psychomusicology Lab</a>
+            <div class="why">Indiana State University research group page (psychology of music / psychomusicology).</div>
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Start here (quick links)</summary>
+        <ul>
+          <li>
+            <a href="https://locator.apa.org/" target="_blank" rel="noopener noreferrer">APA Psychologist Locator</a>
+            <div class="why">Find licensed psychologists by location and specialty.</div>
+          </li>
+          <li>
+            <a href="https://www.musictherapy.org/about/find/" target="_blank" rel="noopener noreferrer">AMTA: How to Find a Music Therapist</a>
+            <div class="why">Guidance for locating credentialed music therapists (U.S.).</div>
+          </li>
+          <li>
+            <a href="https://bulletproofmusician.com/" target="_blank" rel="noopener noreferrer">Bulletproof Musician</a>
+            <div class="why">Performance psychology resources translated for musicians and educators.</div>
+          </li>
+          <li>
+            <a href="https://www.theanxiousmusician.com/" target="_blank" rel="noopener noreferrer">The Anxious Musician</a>
+            <div class="why">Psychoeducation and coping tools for performance anxiety (creator-led resource hub).</div>
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Organizations & directories</summary>
+        <ul>
+          <li>
+            <a href="https://artsmed.org/resources/" target="_blank" rel="noopener noreferrer">PAMA (Performing Arts Medicine Association): Resources</a>
+            <div class="why">Webinars, articles, and publications in performing arts medicine.</div>
+          </li>
+          <li>
+            <a href="https://appliedsportpsych.org/certification/cmpc-directory/" target="_blank" rel="noopener noreferrer">AASP: Find a Certified Mental Performance Consultant® (CMPC)</a>
+            <div class="why">Directory of mental performance consultants (filter for performance area: Arts).</div>
+          </li>
+          <li>
+            <a href="https://backline.care/gethelp/" target="_blank" rel="noopener noreferrer">Backline: Mental health resources for music industry professionals</a>
+            <div class="why">Free support navigation and resource connections (U.S. case management; global resources also available).</div>
+          </li>
+          <li>
+            <a href="https://www.musiciansfoundation.org/other-resources" target="_blank" rel="noopener noreferrer">Musicians Foundation: Other resources</a>
+            <div class="why">Links to MusiCares, Music Health Alliance, Sweet Relief, and more (U.S.).</div>
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>Books</summary>
+        <ul>
+          <li>
+            <span><strong>ACT for Musicians / ACT for Music Educators</strong> (Acceptance & Commitment Training)</span>
+            <div class="why">Values-based, skills-focused approach for anxiety, attention, and performance under pressure.</div>
+          </li>
+          <li>
+            <span><strong>Dianna T. Kenny</strong> — <em>The Psychology of Music Performance Anxiety</em></span>
+            <div class="why">Comprehensive scholarly overview of MPA theory, assessment, and treatment.</div>
+          </li>
+          <li>
+            <span><strong>Julie Jaffee Nagel</strong> — <em>Managing Stage Fright</em></span>
+            <div class="why">Practical guidance with attention to teacher–student dynamics and the musician’s identity.</div>
+          </li>
+          <li>
+            <span><strong>Gerald Klickstein</strong> — <em>The Musician’s Way</em></span>
+            <div class="why">Practice/performance habits, including strategies for managing nerves and building consistency.</div>
+          </li>
+          <li>
+            <span><strong>Don Greene</strong> — <em>Performance Success</em></span>
+            <div class="why">Performance coaching tools for pressure situations; routines and mental skills.</div>
+          </li>
+          <li>
+            <span><strong>Barry Green & W. Timothy Gallwey</strong> — <em>The Inner Game of Music</em></span>
+            <div class="why">Classic attention/self-talk framework for staying present and reducing interference.</div>
+          </li>
+          <li>
+            <span><strong>David Buswell</strong> — <em>Performance Strategies for Musicians</em></span>
+            <div class="why">Stage-fright-focused strategies and structured skill-building.</div>
+          </li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>International</summary>
+        <ul>
+          <li>
+            <a href="https://www.ism.org/advice/music-performance-anxiety/" target="_blank" rel="noopener noreferrer">Independent Society of Musicians (ISM): Music performance anxiety</a>
+            <div class="why">Plain-language overview and practical ideas; UK-based but broadly applicable.</div>
+          </li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="research">
+      <div class="section-head">
+        <h2>Selected research</h2>
+        <p class="meta">APA-style citations (click DOI links)</p>
+      </div>
+
+      <details open>
+        <summary>Jazz, genre, and improvisation</summary>
+        <ol class="apa">
+          <li>
+            Martin-Gagnon, G., &amp; Creech, A. (2019). Cool jazz: Music performance anxiety in jazz performance students. <em>Music Education Research</em>, <em>21</em>(4), 414–425.
+            <br><a class="doi" href="https://doi.org/10.1080/14613808.2019.1605346" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/14613808.2019.1605346</a>
+          </li>
+          <li>
+            Papageorgi, I., Creech, A., &amp; Welch, G. (2011). Perceived performance anxiety in advanced musicians specializing in different musical genres. <em>Psychology of Music</em>, <em>41</em>(1), 18–41.
+            <br><a class="doi" href="https://doi.org/10.1177/0305735611408995" target="_blank" rel="noopener noreferrer">https://doi.org/10.1177/0305735611408995</a>
+          </li>
+          <li>
+            Papageorgi, I., &amp; Welch, G. F. (2020). “A bed of nails”: Professional musicians’ accounts of the experience of performance anxiety from a phenomenological perspective. <em>Frontiers in Psychology</em>, <em>11</em>, 605422.
+            <br><a class="doi" href="https://doi.org/10.3389/fpsyg.2020.605422" target="_blank" rel="noopener noreferrer">https://doi.org/10.3389/fpsyg.2020.605422</a>
+          </li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Prevalence, risk factors, and conceptual foundations</summary>
+        <ol class="apa">
+          <li>
+            Brugués, A. O. (2011). Music performance anxiety—Part 1. A review of its epidemiology. <em>Medical Problems of Performing Artists</em>, <em>26</em>(2), 102–105.
+            <br><a class="doi" href="https://doi.org/10.21091/mppa.2011.2015" target="_blank" rel="noopener noreferrer">https://doi.org/10.21091/mppa.2011.2015</a>
+          </li>
+          <li>
+            Fernholz, I., Mumm, J. L. M., Plag, J., Noeres, K., Rotter, G., Willich, S. N., Ströhle, A., Berghöfer, A., &amp; Schmidt, A. (2019). Performance anxiety in professional musicians: A systematic review on prevalence, risk factors and clinical treatment effects. <em>Psychological Medicine</em>, <em>49</em>(14), 2287–2306.
+            <br><a class="doi" href="https://doi.org/10.1017/S0033291719001910" target="_blank" rel="noopener noreferrer">https://doi.org/10.1017/S0033291719001910</a>
+          </li>
+          <li>
+            Papageorgi, I., Hallam, S., &amp; Welch, G. F. (2007). A conceptual framework for understanding musical performance anxiety. <em>Research Studies in Music Education</em>, <em>28</em>(1), 83–107.
+            <br><a class="doi" href="https://doi.org/10.1177/1321103X070280010" target="_blank" rel="noopener noreferrer">https://doi.org/10.1177/1321103X070280010</a>
+          </li>
+          <li>
+            Sadler, M. E., &amp; Miller, C. J. (2010). Performance anxiety: A longitudinal study of the roles of personality and experience in musicians. <em>Social Psychological and Personality Science</em>, <em>1</em>(3), 280–287.
+            <br><a class="doi" href="https://doi.org/10.1177/1948550610370492" target="_blank" rel="noopener noreferrer">https://doi.org/10.1177/1948550610370492</a>
+          </li>
+          <li>
+            Nicholson, D. R., Cody, M. W., &amp; Beck, J. G. (2015). Anxiety in musicians: On and off stage. <em>Psychology of Music</em>, <em>43</em>(3), 438–449.
+            <br><a class="doi" href="https://doi.org/10.1177/0305735614540018" target="_blank" rel="noopener noreferrer">https://doi.org/10.1177/0305735614540018</a>
+          </li>
+          <li>
+            Nielsen, C., Studer, R. K., Hildebrandt, H., Nater, U. M., Wild, P., Danuser, B., &amp; Gomez, P. (2018). The relationship between music performance anxiety, subjective performance quality and post-event rumination among music students. <em>Psychology of Music</em>, <em>46</em>(1), 136–152.
+            <br><a class="doi" href="https://doi.org/10.1177/0305735617706539" target="_blank" rel="noopener noreferrer">https://doi.org/10.1177/0305735617706539</a>
+          </li>
+          <li>
+            Mor, S., Day, H. I., Flett, G. L., &amp; Hewitt, P. L. (1995). Perfectionism, control, and components of performance anxiety in professional artists. <em>Cognitive Therapy and Research</em>, <em>19</em>(2), 207–225.
+            <br><a class="doi" href="https://doi.org/10.1007/BF02229695" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/BF02229695</a>
+          </li>
+        </ol>
+      </details>
+
+      <details>
+        <summary>Interventions and skills training</summary>
+        <ol class="apa">
+          <li>
+            Tief, V. J., &amp; Gröpel, P. (2021). Pre-performance routines for music students: An experimental pilot study. <em>Psychology of Music</em>, <em>49</em>(5), 1261–1272.
+            <br><a class="doi" href="https://doi.org/10.1177/0305735620953621" target="_blank" rel="noopener noreferrer">https://doi.org/10.1177/0305735620953621</a>
+          </li>
+          <li>
+            Khalsa, S. B. S., Shorter, S. M., Cope, S., Wyshak, G., &amp; Sklar, E. (2009). Yoga ameliorates performance anxiety and mood disturbance in young professional musicians. <em>Applied Psychophysiology and Biofeedback</em>, <em>34</em>(4), 279–289.
+            <br><a class="doi" href="https://doi.org/10.1007/s10484-009-9103-4" target="_blank" rel="noopener noreferrer">https://doi.org/10.1007/s10484-009-9103-4</a>
+          </li>
+          <li>
+            Shaw, T. A., Juncos, D. G., &amp; Winter, D. (2020). Piloting a new model for treating music performance anxiety: Training a singing teacher to use acceptance and commitment coaching with a student. <em>Frontiers in Psychology</em>, <em>11</em>, 882.
+            <br><a class="doi" href="https://doi.org/10.3389/fpsyg.2020.00882" target="_blank" rel="noopener noreferrer">https://doi.org/10.3389/fpsyg.2020.00882</a>
+          </li>
+          <li>
+            MacAfee, E., &amp; Comeau, G. (2020). Exploring music performance anxiety, self-efficacy, performance quality, and behavioural anxiety within a self-modelling intervention for young musicians. <em>Music Education Research</em>, <em>22</em>(4), 457–477.
+            <br><a class="doi" href="https://doi.org/10.1080/14613808.2020.1781074" target="_blank" rel="noopener noreferrer">https://doi.org/10.1080/14613808.2020.1781074</a>
+          </li>
+        </ol>
+      </details>
+</section>
+
+    <footer>
+      <div class="fineprint">
+        <strong>Note:</strong> This page is for education and resource navigation. It does not provide medical or mental health advice.
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
